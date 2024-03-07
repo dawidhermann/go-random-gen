@@ -11,9 +11,7 @@ import (
 	"github.com/dawidhermann/go-random-gen/internal/parser"
 )
 
-var (
-	ErrNoEntries = errors.New("entries slice is empty")
-)
+var ErrNoEntries = errors.New("entries slice is empty")
 
 // Returns random entry from passed slice
 func GetRandomEntry(entries []parser.Entry) (parser.Entry, error) {
